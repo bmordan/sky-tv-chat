@@ -13,8 +13,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "express-ws": "^4.0.0",
-    "leveldown": "^4.0.2",
-    "levelup": "^4.0.0"
+    "redis": "^2.8.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
