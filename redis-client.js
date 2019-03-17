@@ -1,10 +1,11 @@
 const redis = require('redis')
 const { promisify } = require('util')
-const client = redis.createClient(process.env.REDIS_URL)
+const { REDIS_URL } = process.env
+const client = redis.createClient(REDIS_URL)
 
 module.exports = {
-  ...client,
-  getAsync: promisify(client.get).bind(client),
-  setAsync: promisify(client.set).bind(client),
-  keysAsync: promisify(client.keys).bind(client)
+  set: promisify(client.hset).bind(client),
+  get: promisify(client.hgetall).bind(client),
+  del: promisify(client.del).bind(client),
+  dall: promisify(client.flushall).bind(client)
 }
