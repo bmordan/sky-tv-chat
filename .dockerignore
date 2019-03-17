@@ -1,0 +1,6 @@
+db
+.vscode
+node_modules
+README.md
+.gitignore
+Dockerfile
