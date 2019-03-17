@@ -1,4 +1,5 @@
-# Sky-chat ![](http://sky-api.whitechapeau.com/images/sky-1.png)
+![](https://dm8eklel4s62k.cloudfront.net/images/sky-logo-b90e8c9.jpg)
+# Sky-chat
 
 This is a simple chat server.
 
